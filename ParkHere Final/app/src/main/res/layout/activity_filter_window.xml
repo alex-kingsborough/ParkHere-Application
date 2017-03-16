@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#3ABEFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:text="@string/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/distance_Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <Button
+                android:text="@string/_0_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_0_5_btn"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_1_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_1_0_btn"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_1_5_btn"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_2_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_2_0_btn"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_2_5_btn"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_3_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mile_3_0_btn"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:text="@string/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/rating_filter_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <Button
+                android:text="@string/_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_2_button"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_3_button"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_4_button"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/any"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_any_button" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/permit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/permit_text"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <Button
+                android:text="@string/required"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/permit_required"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/n_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/permit_na"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/any"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/permit_any"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/filters_apply"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_bg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

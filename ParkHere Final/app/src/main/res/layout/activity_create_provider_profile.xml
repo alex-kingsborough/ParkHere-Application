@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/create_pprof_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3ABEFF">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="16dp"
+        android:elevation="2dp"
+        android:background="#FFFFFF">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Provider Profile Form -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="68dp"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <!-- Personal Information -->
+            <TextView android:id="@+id/create_pprof_personal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="PERSONAL"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="16dip"/>
+
+            <!-- First Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="First Name"
+                    android:id="@+id/create_pprof_fname"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Last Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Last Name"
+                    android:id="@+id/create_pprof_lname"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Phone Number Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Phone Number"
+                    android:id="@+id/create_pprof_phonenumber"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Payment Information -->
+            <TextView android:id="@+id/create_pprof_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:text="PAYMENT"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="16dip"/>
+
+            <!-- Bank Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Bank Name"
+                    android:id="@+id/create_pprof_bank"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Account Type Label -->
+            <TextView android:id="@+id/create_pprof_accounttype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="Account Type"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="16dip"/>
+
+            <RadioGroup
+                android:id="@+id/create_pprof_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="2dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/create_pprof_radio_checking"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:buttonTint="#3ABEFF"
+                    android:text="Checking/Prepaid Card" />
+
+                <RadioButton
+                    android:id="@+id/create_pprof_radio_savings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#3ABEFF"
+                    android:text="Savings" />
+            </RadioGroup>
+
+            <!-- Account Number Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Account Number"
+                    android:id="@+id/create_pprof_accountnumber"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Routing Number Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Routing Number"
+                    android:id="@+id/create_pprof_routingnumber"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Create Profile Button -->
+            <Button
+                android:id="@+id/create_pprof_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="75dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Create Profile"/>
+
+        </LinearLayout>
+        <!-- Provider Profile Form Ends -->
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/create_pprof_profile"
+        layout="@layout/photo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/relativeLayout"
+        app:layout_anchorGravity="top|center"/>
+</android.support.design.widget.CoordinatorLayout>

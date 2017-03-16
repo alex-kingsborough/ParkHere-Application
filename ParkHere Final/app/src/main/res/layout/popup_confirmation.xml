@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3ABEFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to a space at:"
+        android:textSize="30dp"
+        android:id="@+id/confirm_text"
+        android:layout_margin="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_yes_btn"
+            android:layout_margin="5dp"
+            android:text="YES"/>
+
+        <Button
+
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_no_btn"
+            android:text="No"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

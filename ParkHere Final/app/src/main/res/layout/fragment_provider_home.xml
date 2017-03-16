@@ -1,0 +1,90 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/provider_home_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/provider_home_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/provider_home_label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="45dp"
+                android:text="Parking Spaces"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/provider_home_table_label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16dp"
+                android:text=""
+                android:textStyle="bold"/>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="0,1"
+                android:id="@+id/provider_home_table"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TableLayout>
+
+            <Button
+                android:id="@+id/provider_home_add_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Add Parking Space"/>
+
+            <Button
+                android:id="@+id/provider_home_edit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Edit Parking Space"/>
+
+            <Button
+                android:id="@+id/provider_home_delete_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Delete Parking Space"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

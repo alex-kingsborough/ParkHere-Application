@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">ParkHere</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ADD TO POOJA's -->
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_terms_of_service">terms_of_service</string>
+    <string name="filters">Filters</string>
+    <string name="clear_filcters">Clear Filcters</string>
+    <string name="price">Avg price/hr</string>
+    <string name="_10">$10</string>
+    <string name="_25">$25</string>
+    <string name="_5">$5</string>
+    <string name="_15">$15</string>
+    <string name="_20">$20</string>
+    <string name="any">ANY</string>
+    <string name="distance">Distance</string>
+    <string name="_0_5">0.5</string>
+    <string name="_1_0">1.0</string>
+    <string name="_1_5">1.5</string>
+    <string name="_2_0">2.0</string>
+    <string name="_2_5">2.5</string>
+    <string name="_3_0">3.0</string>
+    <string name="rating">Rating</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="size">Size</string>
+    <string name="suv">SUV</string>
+    <string name="compact">Compact</string>
+    <string name="handicap">Handicap</string>
+    <string name="truck">Truck</string>
+    <string name="covered">Covered</string>
+    <string name="permit">Permit</string>
+    <string name="required">Required</string>
+    <string name="n_a">none</string>
+    <string name="either">Either</string>
+    <string name="provider_rating">Provider Rating</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_up_for_parkhere">Sign Up for ParkHere</string>
+    <string name="question_mark_link">question mark link</string>
+    <string name="email">Email</string>
+    <string name="reenter_password">Reenter Password</string>
+    <string name="primary_role">Primary Role</string>
+    <string name="provider">Provider</string>
+    <string name="seeker">Seeker</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="leftarrow"><![CDATA[<]]></string>
+    <string name="address">Address:</string>
+    <string name="total_price">Total Price</string>
+
+    <string-array name="size">
+        <item>compact</item>
+        <item>fullsize</item>
+    </string-array>
+
+    <string-array name="permit">
+        <item>Permit Required</item>
+        <item>No Permit</item>
+    </string-array>
+
+    <string-array name="Cards">
+        <item>Card 1</item>
+        <item>Card 2</item>
+    </string-array>
+
+    <string-array name="cancellation">
+        <item>none</item>
+        <item>lenient</item>
+        <item>strict</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$1</item>
+        <item>$2</item>
+        <item>$4</item>
+        <item>$5</item>
+        <item>$7.50</item>
+        <item>$10</item>
+        <item>$15</item>
+        <item>$25</item>
+        <item>$50</item>
+    </string-array>
+
+
+    <string-array name="hours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="am_pm">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string-array name="repeat">
+        <item>no</item>
+        <item>daily</item>
+        <item>weekly</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>no</item>
+        <item>daily</item>
+        <item>weekly</item>
+    </string-array>
+
+    <string-array name="list_view_array">
+        <item>first spot</item>
+        <item>second spot</item>
+        <item>third spot</item>
+        <item>Forth spot</item>
+        <item>fifth spot</item>
+    </string-array>
+
+    <string-array name="filters">
+        <item>Distance</item>
+        <item>Price</item>
+        <item>Rating</item>
+        <item>Provider Rating</item>
+    </string-array>
+
+    <string-array name="ascending">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="years">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+</resources>

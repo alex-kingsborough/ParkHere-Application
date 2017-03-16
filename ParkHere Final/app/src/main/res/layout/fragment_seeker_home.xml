@@ -1,0 +1,278 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seeker_home_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seeker_home_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/seeker_home_label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="45dp"
+                android:text="Search"
+                android:textStyle="bold"/>
+
+            <!-- Address Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Address"
+                    android:id="@+id/seeker_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Start Date Label -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5" >
+
+                    <EditText
+                        android:hint="Start Date [YYYY-MM-DD]"
+                        android:id="@+id/seeker_home_start_date"
+                        android:inputType="date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/seeker_home_startDatePicker"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/date" />
+
+            </LinearLayout>
+
+            <!-- Start Time Spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Start Time" />
+
+            <Spinner
+                android:id="@+id/seeker_home_start_time_spinner"
+                android:padding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- End Date Label -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5">
+
+                    <EditText
+                        android:hint="End Date [YYYY-MM-DD]"
+                        android:id="@+id/seeker_home_end_date"
+                        android:inputType="date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/seeker_home_endDatePicker"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/date" />
+
+            </LinearLayout>
+
+            <!-- End Time Spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="End Time" />
+
+            <Spinner
+                android:id="@+id/seeker_home_end_time_spinner"
+                android:padding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+                <CheckBox
+                    android:text="Compact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/compact"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:text="SUV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suv"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:text="Truck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/truck"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/seeker_home_handicap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:text="Not Handicap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notHandicap"
+                            android:layout_weight="1" />
+                        <RadioButton
+                            android:text="Handicap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/handicap"
+                            android:layout_weight="1" />
+                        <RadioButton
+                            android:text="Either"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/eitherHandicap"
+                            android:checked="true"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/seeker_home_covered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:text="Not Covered"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notCovered"
+                            android:layout_weight="1" />
+                        <RadioButton
+                            android:text="Covered"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/covered"
+                            android:layout_weight="1" />
+                        <RadioButton
+                            android:text="Either"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/eitherCovered"
+                            android:checked="true"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/seeker_home_list_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="List View"/>
+
+            <Button
+                android:id="@+id/seeker_home_map_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Map View"/>
+
+            <Button
+                android:id="@+id/seeker_home_repeat_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Search Repeated Availability"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

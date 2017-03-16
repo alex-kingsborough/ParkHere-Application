@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sprof_vehicle_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <!-- Vehicle Information -->
+            <TextView android:id="@+id/sprof_vehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="2dp"
+                android:text="VEHICLE"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="16dip"/>
+
+            <!-- Make Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Make"
+                    android:id="@+id/sprof_make"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Model Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Model"
+                    android:id="@+id/sprof_model"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Color Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Color"
+                    android:id="@+id/sprof_color"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Year Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Year"
+                    android:id="@+id/sprof_year"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- License Plate Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="License Plate"
+                    android:id="@+id/sprof_licenseplate"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- Add Vehicle Button -->
+            <Button
+                android:id="@+id/sprof_add_vehicle_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Add Vehicle"/>
+
+            <Button
+                android:id="@+id/sprof_edit_vehicle_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Edit Vehicle"/>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="0,1"
+                android:id="@+id/sprof_vehicle_table"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TableLayout>
+
+            <Button
+                android:id="@+id/sprof_delete_vehicle_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="Delete Vehicle"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

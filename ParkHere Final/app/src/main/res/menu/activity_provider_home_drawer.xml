@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Provider Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/nav_history"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/nav_notifications"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/nav_changepassword"
+            android:title="Change Password" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_addchangerole"
+                android:icon="@drawable/nav_addchangerole"
+                android:title="Add/Change Role" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

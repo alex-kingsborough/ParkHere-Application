@@ -1,0 +1,81 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phistory_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/provider_history_label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="45dp"
+                android:text="Parking Space Reservations"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phistory_table_label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16dp"
+                android:text=""
+                android:textStyle="bold"/>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="0,1"
+                android:id="@+id/phistory_table"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TableLayout>
+
+            <!-- View Reservations Button -->
+            <Button
+                android:id="@+id/phistory_view_history_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="View Reservations"/>
+
+            <!-- View Ratings Button -->
+            <Button
+                android:id="@+id/phistory_view_ratings_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:background="#2176FF"
+                android:textColor="#FFFFFF"
+                android:text="View Ratings"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

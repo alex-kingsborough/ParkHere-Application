@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="#279AF1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/popup_reserve_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your payment method and submit to reserve the parking space!"
+            android:layout_centerInParent="true"
+            android:padding="25sp" />
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:id="@+id/new_spinner"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Card on File"
+                android:id="@+id/curr_card_rb"
+                android:layout_marginRight="20dp"
+                />
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:entries="@array/Cards"
+                android:id="@+id/card_spinner"
+                />
+        </LinearLayout>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use New Card"
+            android:id="@+id/new_card_rb"
+            />
+
+        <EditText
+            android:id="@+id/popup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Name"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@null"
+            />
+        <EditText
+            android:id="@+id/popup_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Credit Card Number"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/popup_CVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:hint="CVV"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/popup_expiration_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:hint="Expiration Date"
+            android:textColorHint="#bbbbbb"
+            android:textCursorDrawable="@null"
+            />
+
+        <Button
+            android:id="@+id/popup_submit_reservation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="#2176FF"
+            android:textColor="#FFFFFF"
+            android:text="Submit Reservation"/>
+    </LinearLayout>
+</RelativeLayout>

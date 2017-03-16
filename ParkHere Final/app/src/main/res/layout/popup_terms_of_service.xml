@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="#279AF1">
+
+    <ImageButton
+        android:id="@+id/popup_tos_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/popup_tos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As a peer-to-peer resource sharing platform, ParkHere assumes no liability for the true availability of parking spaces that are reserved nor does it guarantee the validity of information provided regarding a parking space.\n\nPayment and Government ID photo verification, though stored, are never disclosed to members outside of the ParkHere validation team and are stored using the highest security standards.\n\nPayment information is collected for reservations and postings in ParkHere, but this prototype of the application does not actually charge any card number that is provided with a monetary transaction."
+            android:layout_centerInParent="true"
+            android:padding="25sp" />
+
+        <Button
+            android:id="@+id/popup_tos_agree_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="#2176FF"
+            android:textColor="#FFFFFF"
+            android:text="Accept Terms of Service"/>
+    </LinearLayout>
+</RelativeLayout>
